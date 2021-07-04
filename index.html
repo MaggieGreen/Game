@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JIANG</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="themes/jiangOne.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+
+</head>
+<body>
+<!--Game Intro-->
+<div data-role="page" id="gameIntro" class="cat0">
+    <div data-role="navbar" data-iconpos="left">
+        <ul>
+            <li>
+                <a href="#pageone" class="ui-btn-active" data-icon="carat-l">
+                    Cat Game
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div data-role="main" class="ui-content" align="center">
+        <h3>Game On</h3>
+        <p>This is a Drag & Drop game.
+            <br>
+            <br>
+            In this game, you will see the cat and his toy.
+            <br><br>
+            Drag and drop the right toy to the right cat.
+        </p>
+        <br><br>
+        <a href="#game"><button class="fa fa-rotate-right" style="width: 80%;">Go to play the game</button></a>
+    </div>
+
+
+    <div data-role="navbar" class="footer">
+        <ul>
+            <li>
+                <a href="#gameIntro" class="ui-btn-active">Game</a>
+            </li>
+            <li><a href="#pageone">Cats</a></li>
+            <li><a href="#mapview">Map</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--GAME-->
+<div data-role="page" id="game">
+    <div data-role="navbar" data-iconpos="left">
+        <ul>
+            <li>
+                <a href="#gameIntro" class="ui-btn-active" data-icon="carat-l">
+                    Cat Game
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div data-role="main" class="ui-content" align="left">
+        <h3>Drag & Drop!</h3>
+        <div class="left">
+            <img src="image/tom1.png" alt="tom1" class="tom1 imgBox">
+            <img src="image/cookie1.png" alt="cookie1" class="imgBox cookie1">
+            <img src="image/dora1.png" alt="dora1" class="imgBox dora1">
+        </div><div class="right">
+            <div class="dora0"></div>
+            <div class="tom0"></div>
+            <div class="cookie0"></div>
+        </div>
+    </div>
+    <div align="center" style="width: 100%;">
+        <br>
+        <a href=""><button id="refreshBtn" class="fa fa-rotate-right" style="width: 80%;">restart the game</button></a>
+    </div>
+
+
+    <div data-role="navbar" class="footer">
+        <ul>
+            <li>
+                <a href="#gameIntro" class="ui-btn-active">Game</a>
+            </li>
+            <li><a href="#pageone">Cats</a></li>
+            <li><a href="#mapview">Map</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<!--CATS-->
+<div data-role="page" id="pageone">
+    <div data-role="header">
+        <div data-role="navbar" data-iconpos="left">
+            <ul>
+                <li>
+                    <a href="#" class="ui-btn-active" data-icon="carat-l">
+                        CATS
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <a href="#dora">
+            <div class="cat-list">
+                <div class="cat-list-img">
+                    <img src="image/animal-cat-cute-45201.jpg" alt="dora">
+                </div>
+                <div class="cat-list-des">
+                    <h1>Dora</h1>
+                    <p>The cute healthy kitten was found at the bridge hole.</p>
+                </div>
+
+            </div>
+        </a>
+
+        <a href="#cookie">
+            <div class="cat-list">
+                <div class="cat-list-img">
+                    <img src="image/adorable-animal-black-and-white-290204.jpg" alt="cookie">
+                </div>
+                <div class="cat-list-des">
+                    <h1>Cookie</h1>
+                    <p>Very gentle long-haired cat, discovered by volunteers in the park</p>
+                </div>
+
+            </div>
+        </a>
+
+        <a href="#tom">
+            <div class="cat-list">
+                <div class="cat-list-img">
+                    <img src="image/animal-blue-background-bow-tie-1663417.jpg" alt="tom">
+                </div>
+                <div class="cat-list-des">
+                    <h1>Tom</h1>
+                    <p>A docile British shorthair, abandoned by the original owner</p>
+                </div>
+
+            </div>
+        </a>
+    </div>
+
+    <div data-role="navbar" class="footer">
+        <ul>
+            <li>
+                <a href="#gameIntro" class="ui-btn-active">Game</a>
+            </li>
+            <li><a href="#pageone">Cats</a></li>
+            <li><a href="#mapview">Map</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--DORA-->
+
+<div data-role="page" id="dora">
+    <div data-role="navbar" data-iconpos="left">
+        <ul>
+            <li>
+                <a href="#pageone" class="ui-btn-active" data-icon="carat-l">
+                    Cat Details
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div data-role="main" class="ui-content" align="center">
+        <h2>Adoption Information</h2>
+        <p>Name: Dora</p>
+        <p>Birthday: Jan 17, 2019</p>
+        <p>The cute healthy kitten was found at the bridge hole.</p>
+        <div class="cat-img">
+            <img src="image/animal-cat-cute-45201.jpg" alt="dora">
+        </div>
+    </div>
+
+
+    <div data-role="navbar" class="footer">
+        <ul>
+            <li>
+                <a href="#gameIntro" class="ui-btn-active">Game</a>
+            </li>
+            <li><a href="#pageone">Cats</a></li>
+            <li><a href="#mapview">Map</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--COOKIE-->
+<div data-role="page" id="cookie">
+    <div data-role="navbar" data-iconpos="left">
+        <ul>
+            <li>
+                <a href="#pageone" class="ui-btn-active" data-icon="carat-l">
+                    Cat Details
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div data-role="main" class="ui-content" align="center">
+        <h2>Adoption Information</h2>
+        <p>Name: Cookie</p>
+        <p>Birthday: Mar 20, 2018</p>
+        <p>Very gentle long-haired cat, discovered by volunteers in the park</p>
+        <div class="cat-img">
+            <img src="image/adorable-animal-black-and-white-290204.jpg" alt="cookie">
+        </div>
+    </div>
+
+
+    <div data-role="navbar" class="footer">
+        <ul>
+            <li>
+                <a href="#gameIntro" class="ui-btn-active">Game</a>
+            </li>
+            <li><a href="#pageone">Cats</a></li>
+            <li><a href="#mapview">Map</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--Tom-->
+<div data-role="page" id="tom">
+    <div data-role="navbar" data-iconpos="left">
+        <ul>
+            <li>
+                <a href="#pageone" class="ui-btn-active" data-icon="carat-l">
+                    Cat Details
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div data-role="main" class="ui-content" align="center">
+        <h2>Adoption Information</h2>
+        <p>Name: Tom</p>
+        <p>Birthday: May 15, 2018</p>
+        <p>A docile British shorthair, abandoned by the original owner</p>
+        <div class="cat-img">
+            <img src="image/animal-blue-background-bow-tie-1663417.jpg" alt="tom">
+        </div>
+    </div>
+
+
+    <div data-role="navbar" class="footer">
+        <ul>
+            <li>
+                <a href="#gameIntro" class="ui-btn-active">Game</a>
+            </li>
+            <li><a href="#pageone">Cats</a></li>
+            <li><a href="#mapview">Map</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--MAP VIEW-->
+<div data-role="page" id="mapview">
+    <div data-role="header">
+        <div data-role="navbar" data-iconpos="left">
+            <ul>
+                <li>
+                    <a href="#" class="ui-btn-active" data-icon="carat-l">
+                        Map
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="content">
+
+        <div id="map" style="height: 500px;"></div>
+
+        <script src="mapTwo.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDowaxDBGe3j4_g8vAj-qxWFyzY9RjIUNY&callback=initMap"></script>
+        <!--async defer-->
+
+    </div>
+
+    <div data-role="navbar" class="footer">
+        <ul>
+            <li>
+                <a href="#gameIntro" class="ui-btn-active">Game</a>
+            </li>
+            <li><a href="#pageone">Cats</a></li>
+            <li><a href="#mapview">Map</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script
+        src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"
+        integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="
+        crossorigin="anonymous"></script>
+<script src="jquery-ui-map-3/ui/min/jquery.ui.map.full.min.js"></script>
+
+<script src="jQuery%20UI%20Touch%20Punch.js"></script>
+<script type="text/javascript" src="game.js"></script>
+
+
+
+</body>
+</html>
